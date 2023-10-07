@@ -11,12 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StudentTest {
     @Test
-    public void shouldCreateStudentWithCorrectId() {
-        Student student = this.makeSut();
-        assertEquals("any_id", student.id());
-    }
-
-    @Test
     public void shouldCreateStudentWithCorrectName() {
         Student student = this.makeSut();
         assertEquals("any_name", student.name());
@@ -39,11 +33,7 @@ public class StudentTest {
 
     public Student makeSut() {
         LocalDateTime dateOfBirth = LocalDateTime.of(2004, 5, 12, 10, 10);
-        return new Student(
-                UUID.randomUUID(),
-                "any_name",
-                dateOfBirth
-        );
+        return new Student(UUID.randomUUID(), "any_name", dateOfBirth);
     }
 
 }

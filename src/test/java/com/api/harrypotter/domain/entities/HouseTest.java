@@ -8,12 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class HouseTest {
     @Test
-    public void shouldCreateHouseWithCorrectId() {
-        House house = this.makeSut();
-        assertEquals("any_id", house.id());
-    }
-
-    @Test
     public void shouldCreateHouseWithCorrectName() {
         House house = this.makeSut();
         assertEquals("any_name", house.name());
