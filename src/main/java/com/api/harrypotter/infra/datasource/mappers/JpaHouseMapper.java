@@ -4,7 +4,7 @@ import com.api.harrypotter.domain.entities.House;
 import com.api.harrypotter.infra.datasource.models.HouseModel;
 
 public class JpaHouseMapper {
-   public static HouseModel toJpa(House house) {
+    public static HouseModel toJpa(House house) {
         return new HouseModel(house.id(), house.name(), house.description());
 
     }

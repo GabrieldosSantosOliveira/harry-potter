@@ -1,12 +1,12 @@
 package com.api.harrypotter.domain.entities;
 
+import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.UUID;
 
-public record Student(UUID id, String name, LocalDateTime dateOfBirth) {
+public record Student(UUID id, String name, LocalDate dateOfBirth, House house) implements Serializable {
     public int getAge() {
-        return Period.between(dateOfBirth.toLocalDate(), LocalDate.now()).getYears();
+        return Period.between(dateOfBirth, LocalDate.now()).getYears();
     }
 }

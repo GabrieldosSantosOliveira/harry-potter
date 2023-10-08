@@ -7,6 +7,7 @@ import com.api.harrypotter.domain.gateways.repositories.LoadHouseByNameRepositor
 import com.api.harrypotter.domain.usecases.house.CreateHouseUseCase;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.UUID;
 
