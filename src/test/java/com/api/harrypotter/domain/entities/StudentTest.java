@@ -32,7 +32,7 @@ public class StudentTest {
 
     public Student makeSut() {
         LocalDate dateOfBirth = LocalDate.of(2004, 5, 12);
-        return new Student(UUID.randomUUID(), "any_name", dateOfBirth);
+        return new Student(UUID.randomUUID(), "any_name", dateOfBirth, new House(UUID.randomUUID(), "any_name", "any_description"));
     }
 
 }
